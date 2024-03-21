@@ -2,3 +2,49 @@ Modellizzare la struttura di una tabella per memorizzare tutti i dati riguardant
 delle auto usate messe in vendita da un concessionario
 
 
+ID_prodotto:
+    SMALLINT
+        PK (NOT NULL / UNIQUE / AUTO_INCREMENT)
+Marca:
+    VARCHART(25)
+        NOT NULL
+        
+Modello:
+    VARCHART(30)
+        NOT NULL
+
+Anno:
+    YEAR
+        NOT NULL
+
+KM:
+    TINYINT
+        NOT NULL
+
+Descrizione:
+    TEXT,
+        NULL
+
+Colore:
+    VARCHART(20)
+        NULL
+
+Prezzo:
+    FLOAT(10,2)
+        NOT NULL
+
+Alimentazione:
+    VARCHART(15)
+        NOT NULL
+
+Cambio:
+    VARCHART(10)
+        NOT NULL
+
+CV:
+    SMALLINT
+        NOT NULL
+
+Disponibilità_in_concessionaria:
+    TINYINT
+        NOT NULL
